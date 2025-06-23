@@ -1,0 +1,108 @@
+<nuds xmlns:mets="http://www.loc.gov/METS/" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://nomisma.org/nuds" xsi:schemaLocation="http://nomisma.org/nuds http://nomisma.org/nuds.xsd" recordType="physical">
+    <control>
+        <recordId>4299</recordId>
+        <publicationStatus>approved</publicationStatus>
+        <maintenanceStatus>derived</maintenanceStatus>
+        <maintenanceAgency>
+            <agencyName>CEAlex</agencyName>
+        </maintenanceAgency>
+        <maintenanceHistory>
+            <maintenanceEvent>
+                <eventType>derived</eventType>
+                <eventDateTime standardDateTime="2024-04-30T14:13:28.273+03:00">Tuesday, May 14, 2024</eventDateTime>
+                <agentType>machine</agentType>
+                <agent>xquery</agent>
+                <eventDescription>Imported from csv file</eventDescription>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        <rightsStmt>
+            <copyrightHolder xlink:type="simple" xlink:href="https://www.cealex.org/">Centre d'Études Alexandrines</copyrightHolder>
+            <license for="data" xlink:type="simple" xlink:href="http://opendatacommons.org/licenses/odbl/">Metadata are openly licensed with a Open Data Commons Open Database License (ODbL)</license>
+            <license for="images" xlink:type="simple" xlink:href="https://spdx.org/licenses/CC-BY-NC-4.0.html#licenseText">Creative Commons Attribution Non Commercial 4.0 International</license>
+            <rights xlink:type="simple" xlink:href="https://www.cealex.org/documentary-resources/scientific-archives/">CEAlex-Archives</rights>
+        </rightsStmt>
+        <semanticDeclaration>
+            <prefix>nmo</prefix>
+            <namespace>http://nomisma.org/ontology#</namespace>
+        </semanticDeclaration>
+    </control>
+    <descMeta>
+        <title xml:lang="en">Alexandria FOU.02.10658.37</title>
+        <typeDesc>
+            <dateRange>
+                <fromDate standardDate="-0225">BC 225</fromDate>
+                <toDate standardDate="-0205">BC 205</toDate>
+            </dateRange>
+            <objectType xlink:href="http://nomisma.org/id/coin" xlink:type="simple">Coin</objectType>
+            <denomination xlink:href="http://nomisma.org/id/tetrobol" xlink:type="simple">Tetrobol</denomination>
+            <material xlink:href="" xlink:type="simple"></material>
+            <authority>
+                <persname xlink:href="http://nomisma.org/id/ptolemy_v" xlink:type="simple" xlink:role="authority">Ptolemy V Epiphanes</persname>
+            </authority>
+            <typeSeries xml:lang="en">5F</typeSeries>
+            <geographic>
+                <geogname xlink:href="http://nomisma.org/id/alexandreia_egypt" xlink:type="simple" xlink:role="mint">Alexandria</geogname>
+                <geogname xlink:href="http://nomisma.org/id/egypt" xlink:type="simple" xlink:role="region">Egypt</geogname>
+            </geographic>
+            <obverse>
+                <legend>ΠΤΟΛΕΜΑΙΟΥ ΒΑΣΙΛΕΩΣ</legend>
+
+                <type>
+                    <description xml:lang="fr">Tête de Zeus Ammon à droite</description>
+                </type>
+            </obverse>
+            <reverse>
+                <legend>ΠΤΟΛΕΜΑΙΟΥ ΒΑΣΙΛΕΩΣ</legend>
+                <type>
+                    <description xml:lang="fr">Aigle debout à gauche sur un foudre, ailes ouvertes, tête en arrière ; Θ entre les pattes</description>
+                </type>
+            </reverse>
+            <symbol xlink:href=http://numismatics.org/pella/symbol/monogram.price.465 xlink:type="simple">Price Monogram 465</symbol>
+        </typeDesc>
+        <physDesc>
+            <axis>12</axis>
+            <measurementsSet>
+                <weight units="g">44.41</weight>
+                <diameter units="mm">36</diameter>
+            </measurementsSet>
+            <countermark>Corne d'abondance dans rectangle incus à gauche</countermark>
+        </physDesc>
+        <refDesc>
+            <reference xlink:href="http://numismatics.org/pco/id/cpe.1_2.B517" xlink:type="simple">Coins of the Ptolemaic Empire Vol. I, Part II, no. B517</reference>
+            <reference>
+                <label>Reference CEAlex: </label>
+                <tei:CEAlex>Picard, Faucher 2012, </tei:CEAlex>
+                <tei:idno>367</tei:idno>
+            </reference>
+        </refDesc>
+        <findspotDesc>
+            <findspot>
+		<geogname xlink:type="simple" xlink:role="stratigraphicUnit">FOU.02.10658.37</geogname>
+		<fallsWithin>
+			<geogname xlink:type="simple" xlink:href="{fallsWithinUrl}" xlink:role="findspot">{fallsWithinName}</geogname>
+		</fallsWithin>
+            </findspot>
+        <hoard xlink:type="simple" xlink:href="http://nomisma.org/id/hoard">Trésor</hoard>
+	    <discovery>
+		<date standardDate="2002-12-02">December 02, 2002</date>
+		<!-- ISO 8601: yyyy-mm-dd -->
+	    </discovery>
+        </findspotDesc>
+        <adminDesc>
+            <identifier localType="Index">4299</identifier>
+            <identifier localType="Coin Number">245</identifier>
+	        <identifier localType="Inventory Number">FOU.02.10658.37</identifier>
+            <department xlink:type="simple" xlink:href="http://nomisma.ord/ptolemaic_dynasty">Ptol Dynasty</department>
+            <repository xlink:type="simple">Shallalat</repository>
+        </adminDesc>
+    </descMeta>
+    <digRep>
+        <mets:fileSec>
+            <mets:fileGrp USE="combined">
+                <mets:file USE="iiif">
+                    <mets:FLocat LOCYPE="URL" xlink:href="https://api.nakala.fr/iiif/10.34847/nkl.0adfaiai/d0bba25c0043c8d19669e85b7dec7aa6d91261a1"/>
+                </mets:file>
+            </mets:fileGrp>
+        </mets:fileSec>
+    </digRep>
+</nuds>
