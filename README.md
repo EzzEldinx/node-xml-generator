@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Node.js project automates the transformation of numismatic data from an Excel spreadsheet (`Sample_data.xlsx`) into structured XML files, one per row, using a template (`script.xml`). The script is tailored for the Centre d'Études Alexandrines (CEAlex) and robustly fetches, processes, and outputs data for coin records, including external lookups, special XML formatting, and comprehensive error handling.
+This Node.js project automates the transformation data from an Excel spreadsheet (`Sample_data.xlsx`) into structured XML files, one per row, using a template (`script.xml`). robustly fetches, processes, and outputs data for records, including external lookups, special XML formatting, and comprehensive error handling.
 
 ---
 
@@ -10,7 +10,7 @@ This Node.js project automates the transformation of numismatic data from an Exc
 
 - **Reads Excel Data:** Extracts data from each row of the provided Excel file, skipping header rows.
 - **Template-Based XML Generation:** Uses `script.xml` as a base, updating fields with row-specific data.
-- **External Data Fetching:** Fetches additional labels and titles from URLs (e.g., nomisma.org) with retry logic and timeouts.
+- **External Data Fetching:** Fetches additional labels and titles from URLs with retry logic and timeouts.
 - **Special XML Handling:**
   - Escapes "corne d'abondance" as `corne d&apos;abondance` in all XML output.
   - Ensures copyright holder uses a literal apostrophe.
@@ -106,8 +106,7 @@ For each data row (skipping headers):
 
 ## Special Logic
 
-- **Escaping:** All instances of "corne d'abondance" are replaced with `corne d&apos;abondance` in XML.
-- **Copyright:** The copyright holder is always set to `Centre d'Études Alexandrines`.
+- **Escaping:** All instances of "corne d'abondance" are replaced with `corne d&apos;abondance` 
 - **Date Tag:** If a date is present in column AA, it is formatted as both ISO 8601 and readable text, with a comment above the tag.
 - **External Fetching:** If a label/title cannot be fetched after retries, the tag is left empty but the URL is still included.
 - **Commenting:** If a field is missing or empty, the corresponding XML tag is commented out in the output.
