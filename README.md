@@ -1,4 +1,4 @@
-# Numismatic XML Generator
+# XML Generator
 
 ## Overview
 
